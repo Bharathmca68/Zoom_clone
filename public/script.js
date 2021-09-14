@@ -27,7 +27,6 @@ navigator.mediaDevices
       connectToNewUser(userId, stream);
     });
   });
-
 socket.on("user-disconnected", (userId) => {
   if (peers[userId]) peers[userId].close();
 });
